@@ -6,8 +6,12 @@
 }
 
 body {
-    background-color: white;
+    background-color: #fff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: blueviolet;
     text-align: center;
+}
+
+.heading {
+    font-size: 3rem;
 }
