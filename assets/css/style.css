@@ -38,6 +38,7 @@ body {
 }
 
 .points-zone {
+    color: #000;
     margin: 10px auto;
     width: 50%;
     font-size: 1.5em;
@@ -48,6 +49,26 @@ body {
     margin: 40px auto;
 }
 
+#correct {
+    color: #0000ff;
+    font-weight: normal;
+}
 
+#incorrect {
+    color: #ff0000;
+    font-weight: normal;
+}
 
+.answer {
+    display: none;
+    font-size: 1rem;
+}
 
+#answer-area {
+    border: none;
+    color: #000;
+    display: inline-block;
+    height: 35px;
+    width: 90px;
+    font-size: 1rem;
+}
