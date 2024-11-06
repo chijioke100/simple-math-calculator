@@ -102,6 +102,14 @@ body {
     margin-right: 20px;
 }
 
+.btn-class::after {
+    content: attr(data-type);
+    font-size: 0.9rem;
+    color: blueviolet;
+    position: relative;
+    left: -0.5em;
+}
+
 .plus-cyan {
     border-color: cyan;
     color: #0ff;
@@ -232,8 +240,6 @@ body {
     .solve-zone {
         padding: 10px 0;
     }
-
-
 }
 
 
