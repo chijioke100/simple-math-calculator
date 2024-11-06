@@ -196,7 +196,29 @@ body {
         margin: 0 auto;
     }
 
+    .answer-navy {
+        margin-top: 0;
+    }
+
+    .points-zone {
+        width: 100%;
+    }
+
+    .points {
+        margin: 0.5em auto;
+        display: block;
+        padding: 5px;
+    }
     
+    .heading {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .calc-zone {
+        height: 70vh;
+    }
 
 
 
