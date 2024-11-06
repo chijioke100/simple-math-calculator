@@ -15,8 +15,8 @@
 
 <body>
     <h1 class="heading">
-        <img src="assets/images/calculatorpic.png" alt="Calculator Image-logo">
-        Simple Math Calculator
+        <!--img src="assets/images/calculatorpic.png" alt="Calculator Image-logo"-->
+        <i class="fa-solid fa-calculator"></i> Simple Math Calculator
     </h1>
 
     <div>
@@ -29,6 +29,15 @@
             <button class="divide-black"><i class="fa-solid fa-divide"></i></button>
 
         </div>
+        <div class="solve-zone">
+            <span id="operand1">0</span>
+            <span id="operator">x</span>
+            <span id="operand2">0</span>
+            <span>=</span>
+            <p class="answer">Submit:</p>
+            <input id="answer-area" type="number">
+        </div>
+        <button class="answer-red">Calculate</button>
 
     </div>
     <div></div>
