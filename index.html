@@ -9,24 +9,27 @@
         content="calculator, simple calculator, arithmetic, addition, substraction, multiplication, division">
     <meta name="keywords"
         content="arithmetic, calculator, addition, substraction, multiplication, division, simple calculator, ">
+        <!--Font Awesome link-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Simple Math Calculator</title>
 </head>
 
 <body>
-    <h1 class="heading">
+    <h1 class="heading"><i class="fas fa-calculator"></i>
         <!--img src="assets/images/calculatorpic.png" alt="Calculator Image-logo"-->
-        <i class="fa-solid fa-calculator"></i> Simple Math Calculator
+         Simple Math Calculator
     </h1>
 
-    <div>
+    
 
     <div class="calc-zone">
         <div class="arithm-zone">
-            <button class="plus-cyan"><i class="fa-solid fa-plus"></i></button>
-            <button class="minus-magenta"><i class="fa-solid fa-minus"></i></button>
-            <button class="times-yellow"><i class="fa-solid fa-xmark"></i></button>
-            <button class="divide-black"><i class="fa-solid fa-divide"></i></button>
+            <button data-type="addition" class="plus-cyan"><i class="fas fa-plus"></i></button>
+            <button data-type="substract" class="minus-magenta"><i class="fas fa-minus"></i></button>
+            <button data-type="multiply" class="times-yellow"><i class="fas fa-times"></i></button>
+            <button data-type="division" class="divide-black"><i class="fas fa-divide"></i></button>
 
         </div>
         <div class="solve-zone">
@@ -40,17 +43,14 @@
         <button class="answer-red">Calculate</button>
 
     </div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+
     <div class="points-zone">
         <p class="points">True <span id="point">0</span></p>
         <p class="points">False <span id="point">0</span></p>
 
     </div>
 
-    </div>
+    
 
     <script src="assets/js/script.js"></script>
 </body>
