@@ -72,3 +72,33 @@ body {
     width: 90px;
     font-size: 1rem;
 }
+
+.points {
+    display: inline-block;
+    padding: 20px;
+}
+
+.btns {
+    width: 200px;
+    height: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.btns:focus {
+    outline: none;
+}
+
+.btn-class {
+    padding: auto;
+    border-radius: 25px;
+    background-color: white;
+    border: 10px solid;
+    width: 100px;
+    height: 100px;
+    font-size: 3rem;
+    margin-right: 20px;
+}
+
