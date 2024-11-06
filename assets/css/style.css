@@ -4,3 +4,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blueviolet;
+    text-align: center;
+}
