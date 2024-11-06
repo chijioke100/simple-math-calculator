@@ -158,5 +158,31 @@ body {
     background-color: green;
 }
 
+/* Media Queries */
+@media (max-width: 414px) {
+    .arithm-zone {
+        width: 100%;
+    }
+
+    .btn-class {
+        margin: 0 10px;
+        padding: 5px;
+        border: 5px solid;
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+
+    .btn-class::after {
+        font-size: 0.6rem;
+        left: -0.7rem;
+    }
+
+
+
+    
+
+
+
 
 
