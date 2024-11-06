@@ -187,6 +187,19 @@ body {
         padding: 0;
     }
 
+    .answer {
+        display: block;
+    }
+
+    #answer-area {
+        display: block;
+        margin: 0 auto;
+    }
+
+    
+
+
+
 
 
 
