@@ -102,3 +102,46 @@ body {
     margin-right: 20px;
 }
 
+.plus-cyan {
+    border-color: cyan;
+    color: #0ff;
+}
+
+.plus-cyan:active,
+.plus-cyan:hover {
+    background-color: red;
+    color: white;
+}
+
+.minus-magenta {
+    border-color: magenta;
+    color: #f0f;
+}
+
+.minus-magenta:active,
+.minus-magenta:hover {
+    background-color: yellowgreen;
+    color: white;
+}
+
+.times-yellow {
+    border-color: yellow;
+    color: #ff0;
+}
+
+.times-yellow:active,
+.times-yellow:hover {
+    background-color: blue;
+    color: white;
+}
+
+.divide-black {
+    border-color: black;
+    color: #000;
+}
+
+.divide-black:active,
+.divide-black:hover {
+    background-color: gray;
+    color: white;
+}
