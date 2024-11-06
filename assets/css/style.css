@@ -145,3 +145,16 @@ body {
     background-color: gray;
     color: white;
 }
+
+.answer-navy {
+    margin-top: 20px;
+    background-color: navy;
+    border: 0.5px transparent;
+    border-radius: 15px;
+}
+
+.answer-navy:active,
+.answer-navy:hover {
+    background-color: green;
+}
+
