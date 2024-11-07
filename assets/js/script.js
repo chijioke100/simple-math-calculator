@@ -8,14 +8,24 @@ document.addEventListener('DOMContentLoaded', function() {
                 alert('You clicked calculate'); 
             } else {
                 let calcType = this.getAttribute('data-type');
-                alert(`You clicked ${calcType}`);
+                //alert(`You clicked ${calcType}`);
+                executeCalc(calcType);
             }
         });
     }
+    executeCalc('add');
 });
 
-function executeCalc() {
-    Math.floor(Math.random() * 100) + 1; // random numbers bewteen 1 and 100
+function executeCalc(calcType) { 
+     let number1 = Math.floor(Math.random() * 100) + 1; // random numbers bewteen 1 and 100
+     let number2 = Math.floor(Math.random() * 100) + 1;
+
+     if (calcType === 'add') {
+        showPlusQuestions(number1, number2);
+     } else {
+        alert(`Incorrect: ${calcType}`);
+        throw `Incorrect: ${calcType}. End!`;
+     }
 }
 
 function verifyAnswers() {
@@ -34,7 +44,10 @@ function falseIncrease() {
 
 }
 
-function showPlusQuestions() {
+function showPlusQuestions(operand1, operand2) {
+    document.getElementById('operand1').textContent = operand1;
+    document.getElementById('operand2').textContent = operand2;
+    document.getElementById('operator').textContent = '+';
 
 }
 
