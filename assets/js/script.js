@@ -1,4 +1,4 @@
-
+// Add Event Listener to the button element
 document.addEventListener('DOMContentLoaded', function() {
     let buttons = document.getElementsByTagName('button');
 
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function executeCalc() {
-
+    Math.floor(Math.random() * 100) + 1; // random numbers bewteen 1 and 100
 }
 
 function verifyAnswers() {
