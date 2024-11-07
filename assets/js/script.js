@@ -30,12 +30,14 @@ function executeCalc(calcType) {
 function verifyAnswers() {
     let userAnswer = parseInt(document.getElementById('answer-area').value);
     let solvedAnswer = solveTrueAnswers();
-    let correct = userAnswer === solvedAnswer[0];
+    let isCorrect = userAnswer === solvedAnswer[0];
 
-    if (correct) {
+    if (isCorrect) {
         alert('Right!');
+        trueIncrease();
     } else {
         alert(`Wrong.... you answered ${userAnswer}. The correct answer was ${solvedAnswer[0]}`);
+        falseIncrease();
     }
 
     executeCalc(solvedAnswer[1]);
@@ -56,11 +58,14 @@ function solveTrueAnswers() {
 }
 
 function trueIncrease() {
+    oldScore = parseInt(document.getElementById('correct').innerText);
+    document.getElementById('correct').innerText = ++oldScore;
 
 }
 
 function falseIncrease() {
-
+    oldScore = parseInt(document.getElementById('incorrect').innerText);
+    document.getElementById('incorrect').innerText = ++oldScore;
 }
 
 function showPlusQuestions(operand1, operand2) {
