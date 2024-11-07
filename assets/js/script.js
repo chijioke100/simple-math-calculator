@@ -5,10 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
     for (let button of buttons) {
         button.addEventListener('click', function() {
             if (this.getAttribute('data-type') === 'calculate') {
-                alert('You clicked calculate'); 
+                verifyAnswers();
             } else {
                 let calcType = this.getAttribute('data-type');
-                //alert(`You clicked ${calcType}`);
                 executeCalc(calcType);
             }
         });
@@ -29,11 +28,31 @@ function executeCalc(calcType) {
 }
 
 function verifyAnswers() {
+    let userAnswer = parseInt(document.getElementById('answer-area').value);
+    let solvedAnswer = solveTrueAnswers();
+    let correct = userAnswer === solvedAnswer[0];
+
+    if (correct) {
+        alert('Right!');
+    } else {
+        alert(`Wrong.... you answered ${userAnswer}. The correct answer was ${solvedAnswer[0]}`);
+    }
+
+    executeCalc(solvedAnswer[1]);
 
 }
 
 function solveTrueAnswers() {
+    let operand1 = parseInt(document.getElementById('operand1').innerText);
+    let operand2 = parseInt(document.getElementById('operand2').innerText);
+    let operator = document.getElementById('operator').innerText;
 
+    if (operator === '+') {
+        return [operand1 + operand2, 'add'];
+    } else {
+        alert(`Wrong operator ${operator}`);
+        throw `Wrong operator ${operator}. End!`;
+    }
 }
 
 function trueIncrease() {
