@@ -23,6 +23,8 @@ function executeCalc(calcType) {
         showPlusQuestions(number1, number2);
      } else if (calcType === 'multiply') {
         showTimesQuestions(number1, number2);
+     } else if (calcType === 'subtract') {
+        showMinusQuestions(number1, number2);   
      } else {
         alert(`Incorrect: ${calcType}`);
         throw `Incorrect: ${calcType}. End!`;
@@ -54,7 +56,9 @@ function solveTrueAnswers() {
     if (operator === '+') {
         return [operand1 + operand2, 'add'];
     } else if (operator === '*') {
-        return [operand1 * operand2, 'multiply'];    
+        return [operand1 * operand2, 'multiply'];
+    } else if (operator === '-') {
+        return [operand1 - operand2, 'subtract'];        
     } else {
         alert(`Wrong operator ${operator}`);
         throw `Wrong operator ${operator}. End!`;
@@ -80,7 +84,9 @@ function showPlusQuestions(operand1, operand2) {
 }
 
 function showMinusQuestions() {
-
+    document.getElementById('operand1').textContent = operand1 > operand2 ? operand1 : operand2;
+    document.getElementById('operand2').textContent = operand1 > operand2 ? operand2 : operand1;
+    document.getElementById('operator').textContent = '-';
 }
 
 function showTimesQuestions(operand1, operand2) {
