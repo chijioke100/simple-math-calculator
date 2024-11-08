@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     for (let button of buttons) {
         button.addEventListener('click', function() {
-            if (this.getAttribute('data-type') === 'calculate') {
+            if (this.getAttribute('data-type') === 'Calculate') {
                 verifyAnswers();
             } else {
                 let calcType = this.getAttribute('data-type');
@@ -21,6 +21,8 @@ function executeCalc(calcType) {
 
      if (calcType === 'add') {
         showPlusQuestions(number1, number2);
+     } else if (calcType === 'multiply') {
+        showTimesQuestions(number1, number2);
      } else {
         alert(`Incorrect: ${calcType}`);
         throw `Incorrect: ${calcType}. End!`;
@@ -51,6 +53,8 @@ function solveTrueAnswers() {
 
     if (operator === '+') {
         return [operand1 + operand2, 'add'];
+    } else if (operator === '*') {
+        return [operand1 * operand2, 'multiply'];    
     } else {
         alert(`Wrong operator ${operator}`);
         throw `Wrong operator ${operator}. End!`;
@@ -79,8 +83,10 @@ function showMinusQuestions() {
 
 }
 
-function showTimesQuestions() {
-
+function showTimesQuestions(operand1, operand2) {
+    document.getElementById('operand1').textContent = operand1;
+    document.getElementById('operand2').textContent = operand2;
+    document.getElementById('operator').textContent = '*';
 }
 
 function showDivideQuestions() {
