@@ -25,6 +25,8 @@ function executeCalc(calcType) {
         showTimesQuestions(number1, number2);
      } else if (calcType === 'subtract') {
         showMinusQuestions(number1, number2);   
+     } else if (calcType === 'divide') {
+        showDivideQuestions(number1, number2);   
      } else {
         alert(`Incorrect: ${calcType}`);
         throw `Incorrect: ${calcType}. End!`;
@@ -58,7 +60,9 @@ function solveTrueAnswers() {
     } else if (operator === '*') {
         return [operand1 * operand2, 'multiply'];
     } else if (operator === '-') {
-        return [operand1 - operand2, 'subtract'];        
+        return [operand1 - operand2, 'subtract'];       
+    } else if (operator === '/') {
+        return [operand1 / operand2, 'divide'];    
     } else {
         alert(`Wrong operator ${operator}`);
         throw `Wrong operator ${operator}. End!`;
@@ -83,7 +87,7 @@ function showPlusQuestions(operand1, operand2) {
 
 }
 
-function showMinusQuestions() {
+function showMinusQuestions(operand1, operand2) {
     document.getElementById('operand1').textContent = operand1 > operand2 ? operand1 : operand2;
     document.getElementById('operand2').textContent = operand1 > operand2 ? operand2 : operand1;
     document.getElementById('operator').textContent = '-';
@@ -95,6 +99,8 @@ function showTimesQuestions(operand1, operand2) {
     document.getElementById('operator').textContent = '*';
 }
 
-function showDivideQuestions() {
-    
+function showDivideQuestions(operand2, operand1) {
+    document.getElementById('operand1').textContent = operand1;
+    document.getElementById('operand2').textContent = operand2;
+    document.getElementById('operator').textContent = '/';
 }
