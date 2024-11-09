@@ -15,7 +15,11 @@ document.addEventListener('DOMContentLoaded', function() {
     executeCalc('add');
 });
 
-function executeCalc(calcType) { 
+function executeCalc(calcType) {
+    
+    document.getElementById('answer-area').value = "";
+
+
      let number1 = Math.floor(Math.random() * 100) + 1; // random numbers bewteen 1 and 100
      let number2 = Math.floor(Math.random() * 100) + 1;
 
