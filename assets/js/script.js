@@ -1,4 +1,4 @@
-// Add Event Listener to the button element
+// Add Event Listener to the button element and allow the calculator to load before running
 document.addEventListener('DOMContentLoaded', function() {
     let buttons = document.getElementsByTagName('button');
 
@@ -23,15 +23,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     executeCalc('add');
 });
-
+/***
+ * Function called when the script is loaded 
+ * and after the answer of the user is processed. 
+ */
 function executeCalc(calcType) {
     
     document.getElementById('answer-area').value = "";
     
     document.getElementById('answer-area').focus();
 
-
-     let number1 = Math.floor(Math.random() * 100) + 1; // random numbers bewteen 1 and 100
+     // random numbers bewteen 1 and 100
+     let number1 = Math.floor(Math.random() * 100) + 1; 
      let number2 = Math.floor(Math.random() * 100) + 1;
 
      if (calcType === 'add') {
@@ -48,6 +51,10 @@ function executeCalc(calcType) {
      }
 }
 
+/**
+ * Verify the answers against the first element in
+ * the returned solveTrueAnswers
+*/
 function verifyAnswers() {
     let userAnswer = parseInt(document.getElementById('answer-area').value);
     let solvedAnswer = solveTrueAnswers();
@@ -65,6 +72,10 @@ function verifyAnswers() {
 
 }
 
+/**
+ * Gets the numbers or operands and the operators from the dom 
+ * and return the the right answer.
+ */
 function solveTrueAnswers() {
     let operand1 = parseInt(document.getElementById('operand1').innerText);
     let operand2 = parseInt(document.getElementById('operand2').innerText);
@@ -84,23 +95,34 @@ function solveTrueAnswers() {
     }
 }
 
+/**
+ * Gets the right answer and increase it by 1
+ */
 function trueIncrease() {
     oldScore = parseInt(document.getElementById('correct').innerText);
     document.getElementById('correct').innerText = ++oldScore;
-
 }
 
+/**
+ * Gets the wrong answer and increase it by 1
+ */
 function falseIncrease() {
     oldScore = parseInt(document.getElementById('incorrect').innerText);
     document.getElementById('incorrect').innerText = ++oldScore;
 }
 
+/***
+ * Function that show addition questions
+ */
 function showPlusQuestions(operand1, operand2) {
     document.getElementById('operand1').textContent = operand1;
     document.getElementById('operand2').textContent = operand2;
     document.getElementById('operator').textContent = '+';
-
 }
+
+/***
+ * Function that show substaction questions
+ */
 
 function showMinusQuestions(operand1, operand2) {
     document.getElementById('operand1').textContent = operand1 > operand2 ? operand1 : operand2;
@@ -108,12 +130,18 @@ function showMinusQuestions(operand1, operand2) {
     document.getElementById('operator').textContent = '-';
 }
 
+/***
+ * Function that show multiplication questions
+ */
 function showTimesQuestions(operand1, operand2) {
     document.getElementById('operand1').textContent = operand1;
     document.getElementById('operand2').textContent = operand2;
     document.getElementById('operator').textContent = '*';
 }
 
+/***
+ * Function that show division questions
+ */
 function showDivideQuestions(operand2, operand1) {
     document.getElementById('operand1').textContent = operand1;
     document.getElementById('operand2').textContent = operand2;
