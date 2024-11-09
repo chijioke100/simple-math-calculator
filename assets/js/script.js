@@ -12,12 +12,23 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    document.getElementById('answer-area').addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            verifyAnswers();
+        }
+    })
+
+
+
     executeCalc('add');
 });
 
 function executeCalc(calcType) {
     
     document.getElementById('answer-area').value = "";
+    
+    document.getElementById('answer-area').focus();
 
 
      let number1 = Math.floor(Math.random() * 100) + 1; // random numbers bewteen 1 and 100
