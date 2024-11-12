@@ -93,5 +93,25 @@ vi. One undefined variable is returned.
 
 ![Javascript validator](<assets/images/jsvalidator.png>)
 
+## Bugs
+The bugs are the warning messages in javascript validator that is about extension version (ES6) or Mozilla JS extensions (use moz).
+
+## Deployment
+•	The site was deployed to GitHub pages. The steps to deploy are as follows:
+
+i. In the GitHub repository, navigate to the Settings tab.
+
+ii. From the source section drop-down menu, select the main branch.
+
+iii. Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+The link can be found here [Simple Math Calculator](https://chijioke100.github.io/simple-math-calculator/)
+
+## Credit
+### Content
+•	Instructions on how to implement this project was taken from Love Math project of Code Institute. 
+
+
+
 
 
