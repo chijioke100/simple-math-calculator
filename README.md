@@ -16,16 +16,30 @@ i. This is featured at the top of the page. It shows the name of the calculator:
 
 ![Header image](<assets/images/headerpix.png>)
 
-#### •	Math Options
+#### •	Calculator Options
 i.	The math option is made up of four buttons-choices: addition, subtraction, multiplication and division
 
 ii. The four buttons are interactive that the users can click to make their choices.
 
 ![Math option image](<assets/images/mathoption.png>)
 
-#### •	Math Operands/Operator
+#### •	Calculator Operands/Operator
 i. It contains two operands and operator in between
 
 ii.	The results are clear to the user, it is easy to use and understand.  
 
 ![operands/operator](<assets/images/operands&operator.png>)
+
+#### •	Calculate
+
+  . This button perfrom the arithmetics based on the selections.
+
+  ![calculator image](<assets/images/calculateimage.png>)
+
+#### •	Calculator Counter
+i.	The  counter shows the rate of true and false
+
+ii.	 It helps the players to know the rate of the at which the results are true or false.
+
+![calculator counter](<assets/images/trueorfalse.png>)  
+
