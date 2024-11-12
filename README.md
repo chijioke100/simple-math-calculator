@@ -43,3 +43,20 @@ ii.	 It helps the players to know the rate of the at which the results are true 
 
 ![calculator counter](<assets/images/trueorfalse.png>)  
 
+#### Left to Implement
+•	When there is time I will like to add more calculation functions like log, sin, cos, tan and others.
+
+## Testing
+•	I tested playing the game in different browsers: Firefox, Chrome, Safari.
+
+•	I confirmed the results are correct.
+
+•	I confirmed that the Simple Math Calculator are easy to understand.
+
+•	I confirmed that the colours and fonts chosen are easy to read and accessible by running it through the lighthouse dev tools.
+
+•	I confirmed that the project is responsive, looks good in all screen sizes using dev tools device toolbar.
+
+![Lighthouse view](<assets/images/lighthouseimage.png>)
+
+
