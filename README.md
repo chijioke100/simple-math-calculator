@@ -59,4 +59,39 @@ ii.	 It helps the players to know the rate of the at which the results are true 
 
 ![Lighthouse view](<assets/images/lighthouseimage.png>)
 
+## Validator Testing
+
+•	HTML 
+
+No errors were returned when passing through the official [W3C validator](https://validator.w3.org/)
+
+![html validator](<assets/images/htmlvalidator.png>)
+
+•	CSS
+
+o	One error was dedicated which i fixed and it returned no error. The official website used is [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
+
+![css validator](<assets/images/cssvalidator.png>)
+
+•	JavaScript
+
+No errors were returned when passing through the official [Jshint validator](https://jshint.com/)
+
+o	The following metrics were returned
+
+i. Only twelve functions is returned.
+
+ii. There are eleven function statements with median of three.
+
+iii. It takes only two argument with half median
+
+iv. Cyclomatic complexity number for the function is five with median of two.
+
+v. There are nineteen warnings.
+
+vi. One undefined variable is returned.
+
+![Javascript validator](<assets/images/jsvalidator.png>)
+
+
 
